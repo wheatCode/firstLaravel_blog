@@ -4,7 +4,7 @@
     <meta name="author" content="Mosaddek">
 
     <!--favicon icon-->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
 
     <title>General 1</title>
 

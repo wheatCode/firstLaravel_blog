@@ -24,9 +24,11 @@ Route::get('/contact', function () {
 });
 
 Route::get('/posts', function () {
-    return 'posts';
+    $posts = [1, 2, 3, 4, 5];
+
+    return view('posts.list', ['posts' => $posts]);
 });
 
 Route::get('/posts/{id}', function ($id) {
-    return 'contact ' . $id;
+    return view('posts.show');
 });
