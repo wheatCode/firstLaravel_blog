@@ -5,15 +5,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="text-uppercase">Blog Listing</h4>
+                <h4 class="text-uppercase">部落格</h4>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="#">Home</a>
-                    </li>
+                        <a href="/">首頁</a>
+                   </li>
                     <li class="active">
-                        <a href="#">Blog</a>
+                        <a href="/posts">部落格</a>
                     </li>
-                    <li class="active">Blog Listing</li>
                 </ol>
             </div>
         </div>
@@ -22,7 +21,8 @@
 @endsection
 
 @section('content')
-<section class="body-content ">
+<section class="body-content">
+
 
     <div class="page-content">
         <div class="container">
@@ -37,10 +37,10 @@
                         </div>
                         <div class="blog-post">
                             <div class="full-width">
-                                <img src="assets/img/post/p12.jpg" alt="" />
+                                <img src="/assets/img/post/p12.jpg" alt="" />
                             </div>
                             <h4 class="text-uppercase">
-                                <a href="/posts/3333">standard blog post with photo</a>
+                                <a href="/posts/3333">{{$post->title}}</a>
                             </h4>
                             <ul class="post-meta">
                                 <li>
@@ -58,10 +58,7 @@
                                     <a href="#">4 comments</a>
                                 </li>
                             </ul>
-                            <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo
-                                minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                vitae dicta sunt explicabo.</p>
+                        <p>{{str_limit($post->content,100)}}</p>
                             <a href="/posts/3333" class="btn btn-small btn-dark-solid  "> Continue Reading</a>
                         </div>
                     </div>
@@ -120,7 +117,7 @@
                             <h6 class="text-uppercase">about author</h6>
                         </div>
                         <div class="full-width avatar">
-                            <img src="assets/img/post/avatar.jpg" alt="" />
+                            <img src="/assets/img/post/avatar.jpg" alt="" />
                         </div>
                         <p>Persuaded to return to the shoemaker's shop, young Edward struggled on till three years of his wretched
                             apprenticeship had passed over.</p>
@@ -138,7 +135,7 @@
                             <li>
                                 <div class="thumb">
                                     <a href="#">
-                                        <img src="assets/img/post/post-thumb.jpg" alt="" />
+                                        <img src="/assets/img/post/post-thumb.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="w-desk">
@@ -149,7 +146,7 @@
                             <li>
                                 <div class="thumb">
                                     <a href="#">
-                                        <img src="assets/img/post/post-thumb-2.jpg" alt="" />
+                                        <img src="/assets/img/post/post-thumb-2.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="w-desk">
@@ -160,7 +157,7 @@
                             <li>
                                 <div class="thumb">
                                     <a href="#">
-                                        <img src="assets/img/post/post-thumb-3.jpg" alt="" />
+                                        <img src="/assets/img/post/post-thumb-3.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="w-desk">
