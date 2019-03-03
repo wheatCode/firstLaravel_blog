@@ -1,4 +1,4 @@
-    <script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBvoxNVNChCmTJqmmLFKEu_QyakDi5wOds"></script>
+
      <!-- inject:js -->
     <script src="/assets/vendor/modernizr/modernizr.js"></script>
     <script src="/assets/vendor/jquery/jquery-1.10.2.min.js"></script>
@@ -11,7 +11,6 @@
     <script src="/assets/vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
     <script src="/assets/vendor/elasic-slider/jquery.eislideshow.js"></script>
     <script src="/assets/vendor/flex-slider/jquery.flexslider-min.js"></script>
-    <script src="/assets/vendor/gmap/jquery.gmap.min.js"></script>
     <script src="/assets/vendor/images-loaded/imagesloaded.js"></script>
     <script src="/assets/vendor/isotope/jquery.isotope.js"></script>
     <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
